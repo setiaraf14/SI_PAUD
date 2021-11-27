@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/admin', function () {
     return view('layout-admin.master-admin');
@@ -24,3 +24,21 @@ Route::get('/admin', function () {
 Route::get('/example-page', function () {
     return view('layout-admin.example-page-content');
 });
+
+Route::get('/front', function () {
+    return view('layout-frontend.master');
+});
+
+Route::group(['prefix' => 'pendaftaran'], function () {
+    Route::get('/', function () {
+        return view('layout-frontend.page.pendaftaran');
+    });
+    Route::get('/paud', 'HompageController@pendaftaranPaud');
+});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/register-wali', 'HompageController@registerWali');
+Route::get('/', 'HompageController@homepage');

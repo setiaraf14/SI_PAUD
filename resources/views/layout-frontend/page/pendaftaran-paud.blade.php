@@ -33,19 +33,21 @@
          </div>
          <br>
          <div class="row form-pendaftaran">
-             <div class="col-md-12 abt-info-pic">
+             <div class="col-lg-12 abt-info-pic">
                 <div class="d-flex justify-content-center">
-                    <form>
+                    <form action="{{ url('/pendaftaran/store/'.$jadwal->id) }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <label for=""><h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:#095a59;">Data calon perserta didik</h3></label>
                         <div class="form-row">
                           <div class="form-group col-md-6">
                             <label for="nama">Nama</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Masukan nama" required>
+                            <input type="text" class="form-control" id="nama"  name="nama" placeholder="Masukan nama" required>
                           </div>
                           <div class="form-group col-md-6">
                             <label for="jenis_kelamin">Jenis Kelamin</label>
                             <select name="jenis_kelamin" id="jenis_kelamin" class="form-control">
-                                <option value="L">Laki-laki</option>
-                                <option value="P">Perempuan</option>
+                                <option value="Laki-laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
                             </select>
                           </div>
                         </div>
@@ -82,7 +84,27 @@
                                 <input type="number" name="usia" id="usia" class="form-control" placeholder="Masukan usia" required>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                              <label for="fp_akta_lahir">FP Akta Kelahiran</label>
+                              <input type="file" name="fp_akta_lahir"  id="fp_akta_lahir" class="form-control"  required>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="pas_foto">Pas foto 3x4</label>
+                            <input type="file" name="pas_foto" id="pas_foto" class="form-control"  required>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                              <label for="fp_ktp_ortu">FP KTP Orang Tua</label>
+                              <input type="file" name="fp_ktp_ortu"  id="akta_lahir" class="form-control"  required>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="fp_kk">FP KK</label>
+                            <input type="file" name="fp_kk" id="fp_kk" class="form-control"  required>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                       </form>
                 </div>
              </div>

@@ -30,10 +30,13 @@ Route::get('/front', function () {
 });
 
 Route::group(['prefix' => 'pendaftaran'], function () {
-    Route::get('/', function () {
-        return view('layout-frontend.page.pendaftaran');
-    });
-    Route::get('/paud', 'HompageController@pendaftaranPaud');
+    Route::get('/', 'HompageController@pendaftaranIndex');
+    Route::post('/store/{id}', 'HompageController@storeCalonSiswa');
+    Route::get('/list-calon-siswa', 'HompageController@listCalonSiswa');
+});
+
+Route::group(['prefix' => 'pembayaran'], function () {
+    Route::post('/store', 'HompageController@storePembayaran');
 });
 
 
@@ -42,3 +45,14 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/register-wali', 'HompageController@registerWali');
 Route::get('/', 'HompageController@homepage');
+
+Route::group(['prefix' => 'backend'], function() {
+    Route::get('/', 'DashboardBackendController@index');
+    
+    Route::group(['prefix' => 'jadwal-pendaftaran'], function() {
+        Route::get('/', 'JadwalPendaftaranController@index');
+        Route::post('/store-jadwal', 'JadwalPendaftaranController@storePendaftaran');
+        Route::post('/update-jadwal/{id}', 'JadwalPendaftaranController@updateJadwal');
+        Route::get('/hapus-jadwal/{id}', 'JadwalPendaftaranController@hapusJadwal');
+    });
+});

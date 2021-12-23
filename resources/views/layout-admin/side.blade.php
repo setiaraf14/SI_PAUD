@@ -22,7 +22,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link @yield('dashboard') ">
+            <a href="{{ url('/backend') }}" class="nav-link @yield('dashboard') ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -30,10 +30,10 @@
             </a>
           </li>
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link @yield('permohonan-ktp') ">
+            <a href="{{ url('/backend/jadwal-pendaftaran') }}" class="nav-link @yield('jadwal-pendaftaran') ">
               <i class="nav-icon fas fa-id-card"></i>
               <p>
-                Menu 1
+                Jadwal pendaftaran
               </p>
             </a>
           </li>
@@ -41,7 +41,7 @@
             <a href="#" class="nav-link @yield('permohonan-kk') ">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
-                Menu 2
+                Calon Siswa
               </p>
             </a>
           </li>
@@ -49,7 +49,7 @@
             <a href="#" class="nav-link @yield('example-page') ">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
-                Example Page Content
+                Transaksi Pendaftaran
               </p>
             </a>
           </li>
@@ -99,7 +99,7 @@
             </a>
           </li> --}}
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link">
+            <a href="{{ url('/') }}" class="nav-link">
               <i class="far fa-hand-point-left"></i>
               <p>
                 Back To Homepage

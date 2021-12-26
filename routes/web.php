@@ -45,6 +45,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/register-wali', 'HompageController@registerWali');
 Route::get('/', 'HompageController@homepage');
+Route::get('/pdf-invoice/{id}', 'HompageController@pdfInvoice');
 
 Route::group(['prefix' => 'backend'], function() {
     Route::get('/', 'DashboardBackendController@index');
@@ -54,5 +55,15 @@ Route::group(['prefix' => 'backend'], function() {
         Route::post('/store-jadwal', 'JadwalPendaftaranController@storePendaftaran');
         Route::post('/update-jadwal/{id}', 'JadwalPendaftaranController@updateJadwal');
         Route::get('/hapus-jadwal/{id}', 'JadwalPendaftaranController@hapusJadwal');
+    });
+
+    Route::group(['prefix' => 'calon-siswa'], function() {
+        Route::get('/', 'CalonSiswaController@index');
+    });
+
+    Route::group(['prefix' => 'transaksi'], function() {
+        Route::get('/', 'TransaksiController@index');
+        Route::get('/konfrim/{id}', 'TransaksiController@konfirmasi');
+        Route::get('/reject/{id}', 'TransaksiController@reject');
     });
 });

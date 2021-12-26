@@ -51,7 +51,7 @@
                             <div class="card my-2">
                                 <div class="row no-gutters">
                                     <div class="col-auto">
-                                        <img src="//placehold.it/200" class="img-fluid" alt="" width="150">
+                                        <img src="{{Storage::url($siswa->pas_foto)}}" class="img-fluid" alt="" width="150">
                                     </div>
                                     <div class="col">
                                         <div class="px-2">
@@ -60,7 +60,17 @@
                                             @if($siswa->transaksi->isEmpty())
                                                 <a class="btn btn-primary" data-toggle="modal" data-target="#pembayaran{{ $loop->iteration }}">Lakukan Pembayaran</a>
                                             @else
-                                                <span class="bg-success">Tunggu Konfirmasi</span>  
+                                                @if ($siswa->transaksi[0]->status_pembayaran == "Pembayaran-Terkonfirmasi")
+                                                    <span class="bg-success">Pembayaran terkonfirmasi anak anda telah terdaftar sebagai peserta didik</span>
+                                                    <br>
+                                                    <a href="{{ url('/pdf-invoice/'.$siswa->transaksi[0]->id) }}" class="btn btn-warning">Download Bukti Pembayaran Invoice</a>
+                                                @elseif ($siswa->transaksi[0]->status_pembayaran == "Pembayaran-Direject")
+                                                    <span class="bg-danger">Pembayaran tidak diterima</span>
+                                                    <br>
+                                                    <a class="btn btn-primary" data-toggle="modal" data-target="#pembayaran{{ $loop->iteration }}">Lakukan Pembayaran</a>
+                                                @else
+                                                    <span class="bg-success">Tunggu Konfirmasi</span> 
+                                                @endif
                                             @endif    
                                                 <!-- Modal -->
                                                 <div class="modal fade" id="pembayaran{{ $loop->iteration }}" tabindex="-1" role="dialog" aria-labelledby="pembayaran{{ $loop->iteration }}Label" aria-hidden="true">

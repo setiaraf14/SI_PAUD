@@ -75,7 +75,7 @@
                             <div class="form-group col-md-6">
                                 <label for="tinggal_bersama">Tinggal Bersama</label>
                                 <select name="tinggal_bersama" id="tinggal_bersama" class="form-control">
-                                    <option value="sendiri">Orang tua sendiri</option>
+                                    <option value="Orang-Tua-sendiri">Orang tua sendiri</option>
                                     <option value="wali">Orang tua wali</option>
                                 </select>
                             </div>

@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 use App\TransaksiPembayaran;
+use PDF;
 
 class HompageController extends Controller
 {
@@ -43,7 +44,7 @@ class HompageController extends Controller
                     'message' => "Berhasil membuat akun orang tua wali, sekarang coba login dengan akun anda",
                     'style' => "success"
                 ]);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             $message = $e->getMessage();
             return redirect('/')->with([
                 'status' => 'danger',
@@ -102,5 +103,10 @@ class HompageController extends Controller
         ]);
     }
 
-
+    public function pdfInvoice($id)
+    {
+        $transaksi = TransaksiPembayaran::with(['calon_siswa'])->where('id', $id)->first();
+        $pdf = PDF::loadview('layout-frontend.page.pdf-invoice', compact('transaksi'))->setPaper('A4','potrait');
+        return $pdf->stream();
+    }
 }

@@ -38,7 +38,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link @yield('permohonan-kk') ">
+            <a href="{{ url('/backend/calon-siswa') }}" class="nav-link @yield('calon-siswa') ">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
                 Calon Siswa
@@ -46,7 +46,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link @yield('example-page') ">
+            <a href="{{ url('/backend/transaksi') }}" class="nav-link @yield('transaksi') ">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
                 Transaksi Pendaftaran

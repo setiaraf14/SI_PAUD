@@ -11,7 +11,7 @@ class TransaksiPembayaran extends Model
     protected $table = 'transaksi_pembayarans';
     protected $guarded = [];
 
-    public function Calon_siswa() 
+    public function calon_siswa() 
     {
         return $this->belongsTo(CalonSiswa::class, 'id_calon_siswa', 'id');
     }

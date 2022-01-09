@@ -5,7 +5,7 @@
 @endsection
 
 @section('calon-siswa', 'active')
-@section('title', '| Calon Siswa')
+@section('title', '| Berkas')
 
 @section('judul')
     <h1>Tabel Data </h1>
@@ -35,40 +35,30 @@
                             </div>
                         @endif
                         <div class="table-responsive">
-                            <table id="tabel-data" class="table table-bordered table-striped">
+                            <table class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
-                                        <th>#</th>
-                                        <th>Nama</th>
-                                        <th>Jenis Kelamin</th>
-                                        <th>NIK</th>
-                                        <th>Tempat Tanggal Lahir</th>
-                                        <th>Agama</th>
-                                        <th>Tinggal Bersama</th>
-                                        <th>Usia</th>
-                                        <th>Pendaftaran</th>
-                                        <th>Wali Pendaftar</th>
-                                        <th>Action</th>
+                                        <th>Title Berkas</th>
+                                        <th>Berkas</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @forelse ($calonSiswa as $calon)
-                                        <tr>
-                                            <td>{{ $loop->iteration }}</td>
-                                            <td>{{ $calon->nama}}</td>
-                                            <td>{{ $calon->jenis_kelamin }}</td>
-                                            <td>{{ $calon->nik }}</td>
-                                            <td>{{ $calon->ttl }}</td>
-                                            <td>{{ $calon->agama }}</td>
-                                            <td>{{ $calon->tinggal_bersama }}</td>
-                                            <td>{{ $calon->usia }}</td>
-                                            <td>{{ $calon->pendaftaran->judul_pendaftaran }}</td>
-                                            <td>{{ $calon->wali->name }}</td>
-                                            <td><a href="{{ url('/backend/calon-siswa/berkas/'.$calon->id) }}" class="btn btn-primary">Tampilkan Berkas</a></td>
-                                        </tr>
-                                    @empty
-                                        
-                                    @endforelse
+                                    <tr>
+                                        <td>Pas Foto</td>
+                                        <td><img src="{{Storage::url($calonSiswa->pas_foto)}}" class="img-fluid" alt="" width="150"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Akta Kelahiran</td>
+                                        <td><img src="{{Storage::url($calonSiswa->fp_akta_lahir)}}" class="img-fluid" alt="" width="600" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>KTP Orang Tua</td>
+                                        <td><img src="{{Storage::url($calonSiswa->fp_ktp_ortu)}}" class="img-fluid" alt="" width="400" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kartu Keluarga</td>
+                                        <td><img src="{{Storage::url($calonSiswa->fp_kk)}}" class="img-fluid" alt="" width="900" alt=""></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>

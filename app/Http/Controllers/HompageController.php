@@ -17,7 +17,7 @@ class HompageController extends Controller
 {
     public function homepage()
     {
-        return view('layout-frontend.page.homepage');
+        return view('layout-frontend.page.index');
     }
 
     public function registerWali(Request $request) 

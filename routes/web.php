@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TransaksiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -59,11 +60,13 @@ Route::group(['prefix' => 'backend'], function() {
 
     Route::group(['prefix' => 'calon-siswa'], function() {
         Route::get('/', 'CalonSiswaController@index');
+        Route::get('/berkas/{id}', 'CalonSiswaController@tampilkanBerkas');
     });
 
     Route::group(['prefix' => 'transaksi'], function() {
         Route::get('/', 'TransaksiController@index');
         Route::get('/konfrim/{id}', 'TransaksiController@konfirmasi');
         Route::get('/reject/{id}', 'TransaksiController@reject');
+        Route::get('/export-excel', 'TransaksiController@exportExcel');
     });
 });

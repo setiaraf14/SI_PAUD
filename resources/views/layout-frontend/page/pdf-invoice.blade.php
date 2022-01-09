@@ -130,7 +130,7 @@
                             </td>
 
                             <td>
-                                Pembayaran SPP<br>
+                                Pembayaran Registrasi<br>
                                 {{ $transaksi->calon_siswa->nama }}<br>
                             </td>
                         </tr>

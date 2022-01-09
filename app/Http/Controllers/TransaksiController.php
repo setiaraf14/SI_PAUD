@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\SiswaExport;
 use Illuminate\Http\Request;
 use App\TransaksiPembayaran;
+use Maatwebsite\Excel\Facades\Excel;
 
 class TransaksiController extends Controller
 {
@@ -34,5 +36,20 @@ class TransaksiController extends Controller
             'message' => "Berhasil reject Pembayaran",
             'style' => "success"
         ]);
+    }
+
+    public function exportExcel()
+    {
+        $transaksi = TransaksiPembayaran::with([])->get();
+        
+        $result = $transaksi->map(function ($item, $key) {
+
+            return [
+                'Tanggal Bayar' => $item->tgl_byr,
+                'Invoice' => $item->invoice,
+                'Status' => $item->status_pembayaran,
+            ];
+        });
+         return Excel::download(new SiswaExport($result), 'transaksi-siswa.xlsx');
     }
 }

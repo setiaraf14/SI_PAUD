@@ -34,6 +34,7 @@
                                 </div>
                             </div>
                         @endif
+                        <a href="{{ url('/backend/transaksi/export-excel') }}" class="btn btn-success">Export Excel</a>
                         <div class="table-responsive">
                             <table id="tabel-data" class="table table-bordered table-striped">
                                 <thead>

@@ -26,7 +26,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </head>
 <body>
-<!-- header -->
 <div class="header">
 	 <div class="container">
 		 <div class="headr-left">
@@ -38,8 +37,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="headr-right">
 			 <div class="details">
 				 <ul>
-					 <li><a href="mailto@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>info(at)example.com</a></li>
-					 <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(+1)000 123 456789</li>
 				 </ul>
 			 </div>
 		 </div>
@@ -102,8 +99,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 <div class="container">
 		 <div class="footer-grids">
 			 <div class="col-md-12 ftr-info">
-				 <p>Sed faucibus mollis laoreet. Sed vehicula faucibus tristique lectus a orci molestie finibus. 
-				 Suspendisse pharetra, metus sed rutrum pretium.</p>
+				
 			 </div>	
 			 <div class="clearfix"></div>
 		 </div>
@@ -112,7 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 <div class="copywrite">
 	 <div class="container">
-		 <p>W3layouts</p>
+		 <p>Jangan lupa lunasin yah!</p>
 	 </div>
 </div>
 <!---->

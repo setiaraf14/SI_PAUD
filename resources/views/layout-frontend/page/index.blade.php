@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"><b>Yayasan Bina Murida</b></h2>
-                <h1 style="font-family: 'Georgia', serif; font-size:70px;color : #3b8686;">"Sekolah yang bermutu, mencetak generasi berilmu"</h1>
+                <h1 style="font-family: 'Georgia', serif; font-size:70px;color : #3b8686; text-align: center;">"Sekolah yang bermutu, mencetak generasi berilmu"</h1>
             </div>
         </div>
 

@@ -11,12 +11,12 @@
                 <div class="jumbotron jumbotron-fluid" style="background-image: url('{{ asset('image/ss_paud_2.jpg')}}'); background-size: cover;">
                     <div class="row">
                         <div class="container">
-                            <img src="{{ asset('image/logo-ypid.png')}}" class="img-circle elevation-2" width="100" alt="User Image" style="width: 20%">
+                            <img src="{{ asset('image/logo_bani.png')}}" class="img-circle elevation-2" width="100" alt="User Image" style="width: 20%">
                         </div>
                         <div class="container">
                             <br>
                             <h1 class="" style="color: white"><b>Selamat datang di SI-REGISTRASI</b></h1>
-                            <h2 class="" style="color: white"><b>Paud Bani Insan Murida</b></h2>
+                            <h2 class="" style="color: white"><b>Paud Islam Bani Murida</b></h2>
                         </div>
                     </div>
                 </div>

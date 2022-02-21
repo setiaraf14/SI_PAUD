@@ -6,7 +6,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image d-flex justify-content-center">
-          <img src="{{ asset('image/logo-ypid.png')}}" class="img-circle elevation-2" width="100" alt="User Image" style="width: 50%">
+          <img src="{{ asset('image/logo_bani.png')}}" class="img-circle elevation-2" width="100" alt="User Image" style="width: 50%">
         </div>
         <div class="info">
           <a href="#" class="d-block"></a>

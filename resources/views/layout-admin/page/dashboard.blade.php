@@ -8,45 +8,39 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-header d-flex justify-content-between">
-                        <h3 class="card-title">Data </h3>
+                <div class="jumbotron jumbotron-fluid d-flex justify">
+                    <div class="container">
+                      <h1 class="">Selamat datang di SI-REGISTRASI</h1>
+                      <h2 class="">Paud Bani Insan Murida</h2>
                     </div>
-                    <!-- /.card-header -->
-
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table id="tabel-data" class="table table-bordered table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Nomor</th>
-                                        <th>Data 1</th>
-                                        <th>Data 2</th>
-                                        <th>Data 3</th>
-                                        <th>Status</th>
-                                        <th>Aksi</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                        
-                    </div>
-                </div>   
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="small-box bg-primary">
+                    <div class="inner">
+                    <h3>{{ $countCalonSiswa }}</h3>
+                    <p>Calon Siswa</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-users fa-3x"></i>
+                </div>
+                {{-- <a href="{{ route('kegiatan.index') }}" class="small-box-footer">olah kegiatan <i class="fas fa-arrow-circle-right"></i></a> --}}
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="small-box bg-warning">
+                    <div class="inner">
+                    <h3>{{ $countTransaksiPembayaran }}</h3>
+                    <p>Transaksi Pembayaran</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-id-card fa-3x"></i>
+                </div>
+                {{-- <a href="{{ route('kegiatan.index') }}" class="small-box-footer">olah kegiatan <i class="fas fa-arrow-circle-right"></i></a> --}}
+                </div>
             </div>
         </div>
     </div>
-    
-    @section('data-table')
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('#tabel-data').DataTable();
-            });
-        </script>
-    @endsection 
-        <script>
-            CKEDITOR.replace( 'summary_ekskul' );
-        </script>
 @endsection

@@ -1,15 +1,12 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <span class="brand-text font-weight-light">Template Admin</span>
-    </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="{{ asset('admin/dist/img/AdminLTELogo.jpg') }}" class="img-circle elevation-2" alt="User Image">
+        <div class="image d-flex justify-content-center">
+          <img src="{{ asset('image/logo-ypid.png')}}" class="img-circle elevation-2" width="100" alt="User Image" style="width: 50%">
         </div>
         <div class="info">
           <a href="#" class="d-block"></a>
@@ -39,7 +36,7 @@
           </li>
           <li class="nav-item has-treeview menu-open">
             <a href="{{ url('/backend/calon-siswa') }}" class="nav-link @yield('calon-siswa') ">
-              <i class="nav-icon fas fa-file-alt"></i>
+              <i class="nav-icon fas fa-child"></i>
               <p>
                 Calon Siswa
               </p>
@@ -47,7 +44,7 @@
           </li>
           <li class="nav-item has-treeview menu-open">
             <a href="{{ url('/backend/transaksi') }}" class="nav-link @yield('transaksi') ">
-              <i class="nav-icon fas fa-file-alt"></i>
+              <i class="nav-icon fas fa-money-bill"></i>
               <p>
                 Transaksi Pendaftaran
               </p>
@@ -61,35 +58,7 @@
             </p>
             </a>
         </li> --}}
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link"  @yield('user-role')>
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Menu & Sub Menu
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Staff</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Kepala Bagian</p>
-                </a>
-              </li>
-              {{-- <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>User</p>
-                </a>
-              </li> --}}
-            </ul>
-          </li>
+          
           {{-- <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link @yield('rating') ">
               <i class="nav-icon fas fa-star-half-alt"></i>

@@ -22,6 +22,7 @@
                     <!-- /.card-header -->
 
                     <div class="card-body">
+                        <a href="{{ url('/backend/calon-siswa/export-excel') }}" class="btn btn-success">Export Excel</a>
                         @if(session('message'))
                             <div class="alert alert-{{ session('style') }}" id="alert-notification">
                                 <div class="row">

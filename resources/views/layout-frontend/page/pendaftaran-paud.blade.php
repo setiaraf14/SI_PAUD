@@ -10,14 +10,13 @@
             </div>
             <div class="col-md-7 abt-info-pic">
                 <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:#095a59;"><b>Ketentuan</b></h3>
-                <p>Mauris tempus lorem nec ex facilisis suscipit. Phasellus pretium rutrum augue, eu rutrum
-                lacus lobortis rutrum. Etiam a sem et velit sollicitudin placerat. Maecenas tincidunt 
-                justo ligula, sit amet maximus dolor iaculis quis. Sed laoreet cursus posuere. 
-                Pellentesque commodo odio in luctus interdum.</p>
+                <p>Anak yang akan didaftarkan paling rendah berusia 5 tahun dan paling tinggi berusia 6 tahun pada tanggal 1 Juli tahun berjalan untuk kelompok B. Anak yang akan didaftarkan memiliki akta kelahiran. Ada KTP orang tua. Ada kartu keluarga yang berisi nama anak tersebut.</p>
+                <p>Adapun persyaratan yang diperlukan untuk di upload berupa</p>
                 <ul>
-                    <li>Proin et ligula ut nulla laoreet posuere.</li>
-                    <li>Sed vestibulum magna vel egestas feugiat.</li>
-                    <li>Curabitur nec erat eu lorem gravida aliquet.</li>
+                    <li>Fotocopy akta kelahiran</li>
+                    <li>Fotocopy kartu keluarga</li>
+                    <li>Fotocopy salah satu orang tua kandung</li>
+                    <li>Pas foto anak yang di daftarkan dengan ukuran 3X4</li>
                 </ul>
             </div>
             <div class="clearfix"></div>

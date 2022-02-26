@@ -61,6 +61,7 @@ Route::group(['prefix' => 'backend'], function() {
     Route::group(['prefix' => 'calon-siswa'], function() {
         Route::get('/', 'CalonSiswaController@index');
         Route::get('/berkas/{id}', 'CalonSiswaController@tampilkanBerkas');
+        Route::get('/export-excel', 'CalonSiswaController@exportExcel');
     });
 
     Route::group(['prefix' => 'transaksi'], function() {

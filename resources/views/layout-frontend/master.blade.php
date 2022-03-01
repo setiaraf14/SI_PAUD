@@ -30,7 +30,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 <div class="container">
 		 <div class="headr-left">
 			 <div class="social">							
-				<a href="#"><i class="facebook"></i></a>
+				<img src="{{ asset('image/logo_bani.png')}}" class="img-circle elevation-2" width="100" alt="User Image" style="width: 30%; border-radius: 50%;">
 			 </div>
 			 <div class="clearfix"></div>
 		 </div>
@@ -108,7 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 <div class="copywrite">
 	 <div class="container">
-		 <p>Jangan lupa lunasin yah!</p>
+		 <p>Yayasan Islam Bani Murida</p>
 	 </div>
 </div>
 <!---->

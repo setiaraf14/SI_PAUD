@@ -8,7 +8,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <div class="jumbotron jumbotron-fluid" style="background-image: url('{{ asset('image/ss_paud_2.jpg')}}'); background-size: cover;">
+                <div class="jumbotron jumbotron-fluid" style="background-image: url('{{ asset('image/ss_dashboard_paud.png')}}'); background-size: cover;">
                     <div class="row">
                         <div class="container">
                             <img src="{{ asset('image/logo_bani.png')}}" class="img-circle elevation-2" width="100" alt="User Image" style="width: 20%">

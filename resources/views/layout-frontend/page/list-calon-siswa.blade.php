@@ -25,15 +25,11 @@
                 <img src="{{ asset('template-frontend/images/paud-content.jpg') }}" style="width: 100%" class="img-responsive" alt=""/>
             </div>
             <div class="col-md-7 abt-info-pic">
-                <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:#095a59;"><b>Ketentuan</b></h3>
-                <p>Mauris tempus lorem nec ex facilisis suscipit. Phasellus pretium rutrum augue, eu rutrum
-                lacus lobortis rutrum. Etiam a sem et velit sollicitudin placerat. Maecenas tincidunt 
-                justo ligula, sit amet maximus dolor iaculis quis. Sed laoreet cursus posuere. 
-                Pellentesque commodo odio in luctus interdum.</p>
+                <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:#095a59;"><b>Cara Pembayaran</b></h3>
                 <ul>
-                    <li>Proin et ligula ut nulla laoreet posuere.</li>
-                    <li>Sed vestibulum magna vel egestas feugiat.</li>
-                    <li>Curabitur nec erat eu lorem gravida aliquet.</li>
+                    <li><h4>Tranfer Biaya pembayaran Rp 120.000, ke Rekening <b style="color: blue; font-weight:bold;">BCA : 5930751474 (Yayasan Islam Bani Murida)</h4></b></li>
+                    <li><h4>Simpan bukti transfer, kemudian</h4></li>
+                    <li><h4>Upload bukti transfer sesuai dengan kolom calon siswa yang ingin di daftarkan</h4></li>
                 </ul>
             </div>
             <div class="clearfix"></div>

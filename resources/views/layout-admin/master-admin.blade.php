@@ -89,7 +89,7 @@ to get the desired effect
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <strong>Di bentuk dan dibesarkan seperti anak sendiri</a>.</strong>
+    <strong>Yayasan Islam Bani Murida</strong>
   </footer>
 </div>
 <!-- ./wrapper -->
